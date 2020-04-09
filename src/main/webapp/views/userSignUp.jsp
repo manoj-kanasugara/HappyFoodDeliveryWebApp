@@ -9,9 +9,7 @@
 </head>
 <body>
 <table>
-<form:form action="/signUp" method="post" commandName="userSignUp">
-
-</form:form>
+welcome to sign up page
 <tr></tr>
 
 </table>

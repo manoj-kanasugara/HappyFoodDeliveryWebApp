@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.HappyFoodDeliveryWebApp.model.User;
+
 @RestController
 public class UserController {
 
@@ -19,7 +21,9 @@ public class UserController {
 		
 	}
 	@GetMapping(value = "/signUp")
-	public ModelAndView signUp(ModelAndView model) {
+	public ModelAndView signUp(ModelAndView model, User userSignUp) {
+		System.out.println("inside signup");
+		model.addObject(userSignUp);
 		model.setViewName("userSignUp");
 		return model;
 		
