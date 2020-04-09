@@ -9,7 +9,27 @@
 </head>
 <body>
 <table>
-welcome to sign up page
+welcome to sign up 
+<form:form method="POST" action="/signUpUser" modelAttribute="user">
+<tr>Name:
+<form:input path="name"/>
+</tr><br>
+
+<tr>
+Email
+<form:input path="email"/>
+</tr><br>
+<tr>Mobile Number
+<form:input path="mobileNumber"/>
+</tr><br>
+<tr>Password:
+<form:input path="password"/><br>
+
+<input type="submit"/>
+</tr>
+
+
+</form:form>
 <tr></tr>
 
 </table>
